@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/makePhoto"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="289dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:autoText="false"
+        android:background="@drawable/ic_launcher_background"
+        android:onClick="makePhotoButton"
+        android:text="Проверить"
+        android:textSize="30sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="144dp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/resultView"
+        android:layout_marginTop="15dp"
+        android:text="Результат: "
+        android:textColor="@android:color/holo_red_dark"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="343dp"
+        android:layout_height="320dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:background="#ffee00"
+        android:text=""
+        android:textSize="18dp" />
+
+</RelativeLayout>
